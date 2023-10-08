@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whereverwego</title>
+    <style>
+        body {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            background-color: #fff0e6;
+            color: #333;
+            text-align: center;
+            padding: 50px;
+        }
+
+        #countdown-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        
+        #coffee-img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 20px;
+        }
+
+    
+        
+    </style>
+</head>
+<body>
+    <h1>We'll be together after</h1>
+    <div id="countdown-container">
+        <div id="countdown"></div>
+        <img src="img/iss.gif"  alt="my plane" height="350" width="380"> 
+    </div>
+    <div id="countdown-container">
+        <div id="countdown"></div>
+       
+    </div>
+
+    <script>
+        // Set the date we're counting down to
+        var countDownDate = new Date("2023-12-03 23:59:59").getTime();
+
+        // Update the countdown every 1 second
+        var x = setInterval(function () {
+            // Get the current date and time
+            var now = new Date().getTime();
+
+            // Calculate the remaining time
+            var distance = countDownDate - now;
+
+            // Calculate days, hours, minutes, and seconds
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Display the countdown
+            document.getElementById("countdown").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+
+            // If the countdown is over, display a message
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("countdown").innerHTML = "Coffee Break Time!";
+            }
+        }, 1000);
+    </script>
+</body>
+</html>
+
+
+<head>
+    <title>  Nepal Trip Plan With Bebu</title>
+    <style>
+        body {
+            background-color: #F4C2C2;
+        }
+    </style>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <style>
+        body {
+            font-family: cursive;
+        }
+    </style>
+    <center>
+
+    <h1 style="color:#FDFEFE;">Welcome to our page</h1>
+    <h1 style="color:#FDFEFE;">life of ours</h1> <br> <br> <br>
+    <img src="img/us1.png" alt="my plane" height="350" width="380">    
+    </center>
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vacation Planner</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to an external CSS file for styling -->
+</head>
+<body>
+    <header>
+        <h1>Go to place</h1>
+    </header>
+
+    <main>
+        <section id="destination">
+            <h2>Places Decided</h2>
+            <select>
+                <option value="paris">Sauraha</option>
+                <option value="new-york">Saramart</option>
+                <option value="tokyo">Chatpat Pasal</option>
+                <!-- Add more destination options here -->
+            </select>
+        </section>
+
+        <section id="dates">
+            <h2>Dates</h2>
+            <label for="check-in">Check-In Date:</label>
+            <input type="date" id="check-in" name="check-in">
+            
+            <label for="check-out">Check-Out Date:</label>
+            <input type="date" id="check-out" name="check-out">
+        </section>
+
+        <section id="activities">
+            <h2>Choose Activities</h2>
+            <ul>
+                <li><input type="checkbox" id="activity1" name="activity1"> <label for="activity1">Picnic Date</label></li>
+                <li><input type="checkbox" id="activity2" name="activity2"> <label for="activity2">Highway Ride</label></li>
+                <li><input type="checkbox" id="activity3" name="activity3"> <label for="activity3">Movie Date</label></li>
+                <li><input type="checkbox" id="activity4" name="activity4"> <label for="activity4">Ice cream Date</label></li>
+                <!-- Add more activity options here -->
+            </ul>
+        </section>
+
+        <section id="submit">
+            <input type="submit" value="Plan My Vacation">
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Vacation Planner</p>
+    </footer>
+</body>
+</html>
+
+
+
+    
